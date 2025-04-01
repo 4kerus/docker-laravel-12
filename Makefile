@@ -1,4 +1,4 @@
-setup:
+setup: up
 	docker compose exec php bash -c "composer install && php artisan key:generate && php artisan migrate && npm install && exit"
 
 up:
